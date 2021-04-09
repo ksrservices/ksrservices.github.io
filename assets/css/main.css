@@ -163,12 +163,11 @@ input, select, textarea {
 		color: #35b88f;
 		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
 	}
 
-		a:hover {
-			border-bottom-color: rgba(53, 184, 143, 0);
-		}
+	a:hover {
+		border-bottom-color: rgba(53, 184, 143, 0);
+	}
 
 	sub {
 		position: relative;
@@ -1569,7 +1568,12 @@ input, select, textarea {
 			height: 2.5em;
 			line-height: 2.5em;
 			text-align: center;
-			border: 0;
+			border: solid 1px #fff;
+			opacity:0.5;
+		}
+
+		ul.icons a:hover {
+			opacity:1;
 		}
 
 /* Menu */
@@ -1810,6 +1814,22 @@ input, select, textarea {
 			.button.style3:hover {
 				background: rgba(58, 57, 57, 0.025);
 			}
+
+		/* content */
+		article.content {
+			margin-top: 5em;
+			background: #fff;
+			padding: 3em;
+			font-size: 12pt;
+		}
+		article.content > section > ul {
+			list-style: none;
+		}
+
+		article.content > section > ul li {
+			margin: 0;
+			padding: 0;
+		}
 
 /* Box */
 
@@ -2140,12 +2160,12 @@ input, select, textarea {
 
 		#footer a {
 			color: #fff;
-			border: solid 1px #fff;
+			text-decoration: none;
+			opacity:0.5;
 		}
 
 			#footer a:hover {
-				background-color: #fff;
-				color: #444;
+				opacity:1;
 			}
 
 		#footer .icons {
@@ -2293,8 +2313,7 @@ input, select, textarea {
 				opacity: 1.0;
 			}
 
-/* Wide */
-
+	/* Wide */
 	@media screen and (max-width: 1680px) {
 
 		/* Basic */
@@ -2311,8 +2330,7 @@ input, select, textarea {
 
 	}
 
-/* Normal */
-
+	/* Normal */
 	@media screen and (max-width: 1080px) {
 
 		/* Banner */
@@ -2330,8 +2348,7 @@ input, select, textarea {
 
 	}
 
-/* Narrow */
-
+	/* Narrow */
 	@media screen and (max-width: 840px) {
 
 		/* Basic */
@@ -2413,8 +2430,7 @@ input, select, textarea {
 
 	}
 
-/* Mobile */
-
+	/* Mobile */
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
